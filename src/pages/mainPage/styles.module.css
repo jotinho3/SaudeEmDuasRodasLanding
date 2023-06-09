@@ -1,0 +1,204 @@
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.header {
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  z-index: 10;
+}
+
+.headerFlex {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-left: -5rem;
+}
+.headerFlex img {
+  width: 18rem;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.navLink a {
+  text-decoration: none;
+  font-style: none;
+  color: #FFF;
+  transition: transform 0.3s ease;
+}
+.navLink a:hover {
+  transform: scale(110%);
+}
+@media (max-width: 878px) {
+  .navLink {
+    display: none;
+  }
+}
+
+.sectionFirst {
+  background-image: url("../../assets/pexels-rfstudio-3820359.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionFirstText {
+  z-index: 1;
+  margin-right: 10rem;
+  margin-bottom: 5rem;
+  width: 43%;
+  font-size: 2.2rem;
+}
+.sectionFirstText h1 {
+  color: #FFF;
+  font-weight: 500;
+}
+
+.sectionFirstButton {
+  cursor: pointer;
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: #2812cc;
+  overflow: hidden;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  width: 10rem;
+  border: 2px solid rgb(210, 210, 210);
+  background-color: transparent;
+  border-radius: 100rem;
+  font-size: 1.2rem;
+  color: #FFF;
+  transition: background-color 0.2s ease;
+  margin-top: 3rem;
+}
+.sectionFirstButton::after {
+  background-color: #2812cc;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.sectionFirstButton:hover::after {
+  transform: translate(0, 0);
+}
+.sectionFirstButton:hover {
+  border: 2px solid transparent;
+  transform: scale(1.05);
+  will-change: transform;
+  background-color: #2812d0;
+}
+
+.sectionSecond {
+  height: 980px;
+  width: 100%;
+  background-color: #ffffff;
+}
+.sectionSecond .sectionSecondFlex {
+  display: flex;
+}
+.sectionSecond .sectionSecondFlex .sectionSecondImage {
+  width: 932px;
+  aspect-ratio: 1.2/1;
+}
+
+.sectionThird {
+  height: 600px;
+  width: 100%;
+  background-color: #000000;
+}
+.sectionThird .sectionThirdFlex {
+  display: flex;
+}
+@media (max-width: 878px) {
+  .sectionThird .sectionThirdFlex {
+    flex-direction: column;
+  }
+}
+.sectionThird .sectionThirdFlex .sectionThirdImage {
+  width: 50%;
+  aspect-ratio: 1.2/1;
+}
+@media (max-width: 878px) {
+  .sectionThird .sectionThirdFlex .sectionThirdImage {
+    width: 100%;
+  }
+}
+
+.animationFrame1 {
+  width: 40rem;
+}
+@media (max-width: 878px) {
+  .animationFrame1 {
+    width: 22rem;
+  }
+}
+
+.animationFrame2 {
+  width: 35rem;
+  padding-left: 2rem;
+}
+@media (max-width: 878px) {
+  .animationFrame2 {
+    width: 20rem;
+  }
+}
+
+.bgVideoStyle {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  filter: brightness(15%);
+}
+@media (max-width: 878px) {
+  .bgVideoStyle {
+    display: none;
+  }
+}
+
+@media (max-width: 878px) {
+  body {
+    overflow-x: hidden;
+  }
+  .sectionFirst {
+    margin-top: -10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .sectionFirstText {
+    padding-left: 2rem;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .bgVideoStyle {
+    margin-top: 7rem;
+  }
+}/*# sourceMappingURL=styles.module.css.map */
