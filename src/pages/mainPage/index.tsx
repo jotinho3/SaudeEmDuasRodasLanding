@@ -5,7 +5,9 @@ import flexibilityIcon from '../../assets/icons8-flexibility-64.png';
 import preventionIcon from '../../assets/icons8-prevention-64.png';
 import healthIcon from '../../assets/icons8-health-64.png';
 import Header from "./components/Header";
+import { motion } from "framer-motion";
 import sectionThirdImage from '../../assets/pexels-chermiti-mohamed-3049225.jpg';
+
 
 const ParallaxSection: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -31,9 +33,13 @@ const ParallaxSection: React.FC = () => {
     };
   }, []);
 
+
   return (
     <section className={styles.sectionThird} ref={sectionRef} aria-label="Section 3">
-      <div className={styles.sectionThirdFlex}>
+      <motion.div  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 100 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: false, amount: 0.3 }} className={styles.sectionThirdFlex}>
         <img className={styles.sectionThirdImage} src={sectionThirdImage} alt="Health and wellness" />
         <div className={styles.sectionThirdContent}>
           <h3>Objetivo</h3>
@@ -43,7 +49,7 @@ const ParallaxSection: React.FC = () => {
           </p>
           <button>Saber mais</button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
@@ -58,41 +64,56 @@ const MainPage: React.FC = () => {
       <main>
         <section className={styles.sectionFirst} aria-label="Section 1">
           <video className={styles.bgVideoStyle} autoPlay muted loop ref={videoRef} src={bgVideo} />
-          <div className={styles.sectionFirstText}>
+          <motion.div initial={{ opacity: 0 }}
+  whileInView={{ opacity: 100 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: false, amount: 0.2}} className={styles.sectionFirstText}>
             <h1>Descubra o poder do alongamento e transforme sua vida com uma saúde flexível e plena!</h1>
             <div>
               <button className={styles.sectionFirstButton}>Saber Mais</button>
             </div>
-          </div>
+          </motion.div>
         </section>
 
         <section className={styles.sectionSecond} aria-label="Section 2">
-          <div className={styles.sectionSecondFlex}>
+          <motion.div initial={{ opacity: 0 }}
+  whileInView={{ opacity: 100 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: false}} className={styles.sectionSecondFlex}>
             <span>Benefícios</span>
             <h3>
               Aqui serão apresentados alguns dos benefícios que o leitor terá ao desfrutar do conteúdo do nosso e-book.
             </h3>
 
             <div className={styles.sectionSecondCardFlex}>
-              <div className={styles.sectionSecondCard}>
-                <img src={flexibilityIcon} alt="Flexibilidade" />
+              <motion.div initial={{ y: 30, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 100 }}
+  transition={{ duration: 0.3}}
+  viewport={{ once: false }} className={styles.sectionSecondCard}>
+                <motion.img  src={flexibilityIcon} alt="Flexibilidade" />
                 <h4>Flexibilidade</h4>
                 <p>Obtenha liberdade de movimento e desfrute de uma vida sem limitações.</p>
-              </div>
+              </motion.div>
 
-              <div className={styles.sectionSecondCard}>
-                <img src={preventionIcon} alt="Bem-estar" />
+              <motion.div initial={{ y: 30, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 100 }}
+  transition={{  duration: 0.3, delay: 0.4}}
+  viewport={{ once: false}}  className={styles.sectionSecondCard}>
+                <img src={healthIcon} alt="Bem-estar" />
                 <h4>Bem-estar</h4>
                 <p>Promova harmonia física e mental, encontrando o equilíbrio e serenidade.</p>
-              </div>
+              </motion.div>
 
-              <div className={styles.sectionSecondCard}>
-                <img src={healthIcon} alt="Prevenção" />
+              <motion.div initial={{ y: 30, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 100 }}
+  transition={{  duration: 0.3, delay: 0.8}}
+  viewport={{ once: false}} className={styles.sectionSecondCard}>
+                <img src={preventionIcon} alt="Prevenção" />
                 <h4>Prevenção</h4>
                 <p>Proteja-se de lesões, fortalecendo seu corpo e evitando problemas futuros.</p>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </section>
 
         <ParallaxSection />
