@@ -7,6 +7,9 @@ import healthIcon from '../../assets/icons8-health-64.png';
 import Header from "./components/Header";
 import { motion } from "framer-motion";
 import sectionThirdImage from '../../assets/pexels-chermiti-mohamed-3049225.jpg';
+import sectionFourthSmartphone from '../../assets/CelularSaudeEmDuasRodas.png';
+import sectionFourthTablet from '../../assets/TabletSaudeEmDuasRodas.png';
+import sectionFourthKindle from '../../assets/KindleSaudeEmDuasRodas.png'
 
 
 const ParallaxSection: React.FC = () => {
@@ -47,7 +50,7 @@ const ParallaxSection: React.FC = () => {
           <p>
             O alongamento diário é essencial para ciclistas, motociclistas, cadeirantes e motoboys, pois melhora a flexibilidade, previne lesões e aumenta o desempenho. De acordo com estudos científicos, como o da revista Journal of Sports Sciences, o alongamento regular melhora a eficiência muscular e reduz o risco de lesões musculoesqueléticas.
           </p>
-          <button>Saber mais</button>
+          <a href="https://www.tandfonline.com/doi/abs/10.1080/02640410410001730205" >Saber mais</a>
         </div>
       </motion.div>
     </section>
@@ -118,9 +121,36 @@ const MainPage: React.FC = () => {
 
         <ParallaxSection />
 
-        <section className="section section-4" aria-label="Section 4">
-          {/* Section 4 content goes here */}
-        </section>
+        <section className={styles.sectionFourth} aria-label="Section 3">
+      <motion.div  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 100 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: false, amount: 0.3 }} className={styles.sectionFourthFlex}>
+        <div className={styles.sectionFourthInsideFlex}>
+          <motion.img initial={{ y: 30, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 100 }}
+  transition={{  duration: 0.3, delay: 0.2}}
+  viewport={{ once: false}} src={sectionFourthSmartphone} className={styles.sectionFourthSmartphone} alt="" />
+          <motion.img initial={{ y: 30, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 100 }}
+  transition={{  duration: 0.3, delay: 0.5}}
+  viewport={{ once: false}} src={sectionFourthTablet} className={styles.sectionFourthTablet} alt="" />
+          <motion.img initial={{ y: 30, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 100 }}
+  transition={{  duration: 0.3, delay: 0.8}}
+  viewport={{ once: false}} src={sectionFourthKindle} className={styles.sectionFourthKindle} alt="" />
+
+        </div>
+        <div className={styles.sectionFourthContent}>
+          <h3>Objetivo</h3>
+          <h2>Promovendo Saúde</h2>
+          <p>
+            O alongamento diário é essencial para ciclistas, motociclistas, cadeirantes e motoboys, pois melhora a flexibilidade, previne lesões e aumenta o desempenho. De acordo com estudos científicos, como o da revista Journal of Sports Sciences, o alongamento regular melhora a eficiência muscular e reduz o risco de lesões musculoesqueléticas.
+          </p>
+          <a href="https://www.tandfonline.com/doi/abs/10.1080/02640410410001730205" >Comprar</a>
+        </div>
+      </motion.div>
+    </section>
       </main>
     </>
   );

@@ -8,7 +8,6 @@ body {
   width: 100%;
   color: white;
   padding: 1rem;
-  position: fixed;
   z-index: 10;
 }
 
@@ -47,7 +46,7 @@ body {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 60rem;
+  height: 900px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -56,6 +55,7 @@ body {
 
 .sectionFirstText {
   z-index: 1;
+  margin-top: 6rem;
   margin-right: 10rem;
   margin-bottom: 5rem;
   width: 43%;
@@ -65,12 +65,18 @@ body {
   color: #FFF;
   font-weight: 500;
 }
+@media (max-width: 878px) {
+  .sectionFirstText h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
 
 .sectionFirstButton {
   cursor: pointer;
   border: 2px solid currentColor;
   border-radius: 3rem;
-  color: #2812cc;
+  color: #002f8d;
   overflow: hidden;
   padding: 0.8rem 1.5rem;
   position: relative;
@@ -88,7 +94,7 @@ body {
   margin-top: 3rem;
 }
 .sectionFirstButton::after {
-  background-color: #2812cc;
+  background-color: #002f8d;
   border-radius: 3rem;
   content: "";
   display: block;
@@ -110,26 +116,81 @@ body {
   border: 2px solid transparent;
   transform: scale(1.05);
   will-change: transform;
-  background-color: #2812d0;
+  background-color: #002f8d;
 }
 
 .sectionSecond {
-  height: 980px;
+  height: 96vh;
   width: 100%;
   background-color: #ffffff;
 }
 .sectionSecond .sectionSecondFlex {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20.7rem;
+  gap: 40px;
 }
-.sectionSecond .sectionSecondFlex .sectionSecondImage {
-  width: 932px;
-  aspect-ratio: 1.2/1;
+.sectionSecond .sectionSecondFlex h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+.sectionSecond .sectionSecondFlex span {
+  color: #002f8d;
+}
+@media (max-width: 868px) {
+  .sectionSecond .sectionSecondFlex h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+}
+.sectionSecond .sectionSecondCardFlex {
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+  margin-top: 3.5rem;
+}
+@media (max-width: 868px) {
+  .sectionSecond .sectionSecondCardFlex {
+    flex-direction: column;
+  }
+}
+.sectionSecond .sectionSecondCardFlex .sectionSecondCard {
+  padding: 1.525rem 1rem;
+  width: 350px;
+  height: 313px;
+  border: 2px solid #d6d6d6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.575rem;
+  transition: all 0.4s ease;
+}
+.sectionSecond .sectionSecondCardFlex .sectionSecondCard img {
+  width: 4rem;
+}
+.sectionSecond .sectionSecondCardFlex .sectionSecondCard h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.sectionSecond .sectionSecondCardFlex .sectionSecondCard:hover {
+  border: 2px solid #007acb;
 }
 
 .sectionThird {
-  height: 600px;
+  height: 83.5vh;
   width: 100%;
   background-color: #000000;
+}
+@media (max-width: 878px) {
+  .sectionThird {
+    margin-top: 80rem;
+    height: 220vh;
+  }
 }
 .sectionThird .sectionThirdFlex {
   display: flex;
@@ -147,6 +208,178 @@ body {
   .sectionThird .sectionThirdFlex .sectionThirdImage {
     width: 100%;
   }
+}
+.sectionThird .sectionThirdContent {
+  width: 35%;
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 6rem;
+  color: #FFF;
+}
+.sectionThird .sectionThirdContent h3 {
+  font-weight: 500;
+  margin-top: 5rem;
+}
+.sectionThird .sectionThirdContent h2 {
+  font-size: 2rem;
+}
+.sectionThird .sectionThirdContent p {
+  margin-top: 5rem;
+  font-size: 1.2rem;
+}
+.sectionThird .sectionThirdContent a {
+  cursor: pointer;
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: #002f8d;
+  overflow: hidden;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  width: 10rem;
+  border: 2px solid rgb(210, 210, 210);
+  background-color: transparent;
+  border-radius: 100rem;
+  font-size: 1.1rem;
+  color: #FFF;
+  transition: background-color 0.2s ease;
+  margin-top: 3rem;
+}
+.sectionThird .sectionThirdContent a::after {
+  background-color: #002f8d;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.sectionThird .sectionThirdContent a:hover::after {
+  transform: translate(0, 0);
+}
+.sectionThird .sectionThirdContent a:hover {
+  border: 2px solid transparent;
+  transform: scale(1.05);
+  will-change: transform;
+  background-color: #002f8d;
+}
+
+.sectionFourth {
+  height: 83.5vh;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 12vw;
+}
+@media (max-width: 878px) {
+  .sectionFourth {
+    margin-top: 80rem;
+    height: 220vh;
+  }
+}
+.sectionFourth .sectionFourthFlex {
+  display: flex;
+}
+@media (max-width: 878px) {
+  .sectionFourth .sectionFourthFlex {
+    flex-direction: column;
+  }
+}
+.sectionFourth .sectionFourthFlex .sectionFourthInsideFlex {
+  display: flex;
+  align-items: center;
+  gap: -20;
+}
+.sectionFourth .sectionFourthFlex .sectionFourthInsideFlex .sectionFourthSmartphone {
+  height: 26vh;
+  margin-bottom: 20px;
+}
+.sectionFourth .sectionFourthFlex .sectionFourthInsideFlex .sectionFourthTablet {
+  height: 45vh;
+}
+.sectionFourth .sectionFourthFlex .sectionFourthInsideFlex .sectionFourthKindle {
+  height: 32vh;
+  margin-left: -45px;
+  margin-bottom: -10px;
+}
+.sectionFourth .sectionFourthContent {
+  width: 35%;
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 6rem;
+  color: #000000;
+}
+.sectionFourth .sectionFourthContent h3 {
+  font-weight: 500;
+  margin-top: 4rem;
+}
+.sectionFourth .sectionFourthContent h2 {
+  font-size: 3rem;
+}
+.sectionFourth .sectionFourthContent p {
+  margin-top: 5rem;
+  font-size: 1.2rem;
+}
+.sectionFourth .sectionFourthContent a {
+  cursor: pointer;
+  border: 2px solid currentColor;
+  color: #002f8d;
+  overflow: hidden;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s all ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  text-align: center;
+  width: 10rem;
+  border: 2px solid rgb(210, 210, 210);
+  background-color: #002f8d;
+  font-size: 1.1rem;
+  color: #FFF;
+  transition: background-color 0.2s ease;
+  margin-top: 3rem;
+}
+.sectionFourth .sectionFourthContent a::after {
+  background-color: #002f8d;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.sectionFourth .sectionFourthContent a:hover::after {
+  transform: translate(0, 0);
+}
+.sectionFourth .sectionFourthContent a:hover {
+  border: 2px solid transparent;
+  transform: scale(1.01);
+  will-change: transform;
+  background-color: #002f8d;
+  transition: all 0.2s ease;
 }
 
 .animationFrame1 {
@@ -170,8 +403,10 @@ body {
 
 .bgVideoStyle {
   position: absolute;
-  width: 100%;
+  height: auto;
+  width: 1864px;
   left: 0;
+  right: auto;
   top: 0;
   z-index: 0;
   filter: brightness(15%);

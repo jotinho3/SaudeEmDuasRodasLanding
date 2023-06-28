@@ -303,7 +303,7 @@ margin-top: 3rem;
 
     h3 {
         font-weight: 500;
-        margin-top: 4rem;
+        margin-top: 5rem;
 
     }
 
@@ -313,9 +313,10 @@ margin-top: 3rem;
 
     p {
         margin-top: 5rem;
+        font-size: 1.2rem;
     }
 
-    button {
+    a {
         cursor: pointer;
 
 border: 2px solid currentColor;
@@ -363,7 +364,7 @@ width: 10rem;
 border: 2px solid rgb(210, 210, 210) ;
 background-color: transparent;
 border-radius: 100rem;
-font-size: 1.2rem;
+font-size: 1.1rem;
 color: #FFF;
 transition: background-color 0.2s ease;
 
@@ -378,6 +379,155 @@ margin-top: 3rem;
 }
 
 
+
+.sectionFourth {
+    height: 83.5vh;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 12vw;
+
+    @media (max-width: 878px) {
+        margin-top: 80rem ;
+
+        height: 220vh;
+        
+        
+    }
+
+    .sectionFourthFlex {
+
+    display: flex;
+
+
+    @media (max-width: 878px) {
+        flex-direction: column;
+        
+        
+    }
+
+
+    .sectionFourthInsideFlex {
+        display: flex;
+        align-items: center;
+        gap: -20;
+
+
+
+        .sectionFourthSmartphone{
+            height: 26vh;
+            margin-bottom: 20px;
+          
+        }
+
+        .sectionFourthTablet{
+            height: 45vh;
+          
+        }
+
+        .sectionFourthKindle{
+            height: 32vh;
+            margin-left: -45px;
+            margin-bottom: -10px;
+          
+        }
+
+    }
+
+
+
+  }
+
+  .sectionFourthContent{
+
+    width: 35%;
+
+    display: flex;
+    gap: 1.6rem ;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+
+    padding-left: 6rem;
+    color: #000000;
+
+    h3 {
+        font-weight: 500;
+        margin-top: 4rem;
+
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        margin-top: 5rem;
+        font-size: 1.2rem;
+    }
+
+    a {
+        cursor: pointer;
+
+border: 2px solid currentColor;
+
+color: #002f8d;
+overflow: hidden;
+padding: 0.8rem 1.5rem;
+position: relative;
+text-decoration: none;
+transition: 0.2s all ease-in-out;
+will-change: transform;
+z-index: 0;
+text-align: center;
+
+&::after {
+  background-color: #002f8d;
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+&:hover::after {
+  transform: translate(0, 0);
+}
+
+&:hover {
+  border: 2px solid transparent;
+  transform: scale(1.01);
+  will-change: transform;
+  background-color: #002f8d;
+  transition: all 0.2s ease;
+}
+
+
+
+width: 10rem;
+border: 2px solid rgb(210, 210, 210) ;
+background-color: #002f8d;
+font-size: 1.1rem;
+color: #FFF;
+transition: background-color 0.2s ease;
+
+margin-top: 3rem;
+        
+        
+    }
+
+  }
+
+
+}
 
 .animationFrame1 {
 
