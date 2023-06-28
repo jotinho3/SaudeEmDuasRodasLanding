@@ -88,7 +88,7 @@ const Header = () => {
             <Link href="#">Contato</Link>
           </NavLink>
         </NavLinks>
-        <NavButton>Try Free</NavButton>
+        <NavButton>Comprar</NavButton>
         <StyledBurger
       aria-label="Menu"
       aria-expanded={isDropdownOpen}
