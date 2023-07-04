@@ -79,16 +79,16 @@ const Header = () => {
         <HeaderIcon src={mainIcon} />
         <NavLinks>
           <NavLink>
-          <Link href="#">Home</Link>
+          <Link href="#inicio">Início</Link>
           </NavLink>
           <NavLink>
-            <Link href="#">Produtos</Link>
+            <Link href="#beneficios">Benefícios</Link>
           </NavLink>
           <NavLink>
-            <Link href="#">Contato</Link>
+            <Link href="#objetivo">Objetivo</Link>
           </NavLink>
         </NavLinks>
-        <NavButton>Comprar</NavButton>
+        <NavButton href='#comprar'>Adquirir</NavButton>
         <StyledBurger
       aria-label="Menu"
       aria-expanded={isDropdownOpen}

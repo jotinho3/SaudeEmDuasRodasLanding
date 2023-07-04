@@ -3,6 +3,10 @@ body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: black;
   width: 100%;
@@ -29,7 +33,7 @@ body {
 .navLink a {
   text-decoration: none;
   font-style: none;
-  color: #FFF;
+  color: #fff;
   transition: transform 0.3s ease;
 }
 .navLink a:hover {
@@ -62,7 +66,7 @@ body {
   font-size: 2.2rem;
 }
 .sectionFirstText h1 {
-  color: #FFF;
+  color: #fff;
   font-weight: 500;
 }
 @media (max-width: 878px) {
@@ -89,7 +93,7 @@ body {
   background-color: transparent;
   border-radius: 100rem;
   font-size: 1.2rem;
-  color: #FFF;
+  color: #fff;
   transition: background-color 0.2s ease;
   margin-top: 3rem;
 }
@@ -139,6 +143,7 @@ body {
   font-weight: lighter;
 }
 .sectionSecond .sectionSecondFlex span {
+  font-size: 1.2rem;
   color: #002f8d;
 }
 @media (max-width: 868px) {
@@ -217,7 +222,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding-left: 6rem;
-  color: #FFF;
+  color: #fff;
 }
 .sectionThird .sectionThirdContent h3 {
   font-weight: 500;
@@ -247,7 +252,7 @@ body {
   background-color: transparent;
   border-radius: 100rem;
   font-size: 1.1rem;
-  color: #FFF;
+  color: #fff;
   transition: background-color 0.2s ease;
   margin-top: 3rem;
 }
@@ -282,7 +287,6 @@ body {
   width: 100%;
   background-color: #ffffff;
   padding: 10vh 20vw;
-  margin-bottom: 40vh;
 }
 @media (max-width: 878px) {
   .sectionFourth {
@@ -343,6 +347,18 @@ body {
     margin-bottom: 20vh;
   }
 }
+.sectionFourth .sectionFourthContent h3 {
+  text-decoration: line-through;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 1.5rem;
+}
+.sectionFourth .sectionFourthContent img {
+  color: #fff;
+  width: 1.5rem;
+  margin-left: 10px;
+  margin-bottom: -5px;
+}
 .sectionFourth .sectionFourthContent h2 {
   font-size: 3rem;
 }
@@ -365,20 +381,19 @@ body {
   border: 2px solid currentColor;
   color: #002f8d;
   overflow: hidden;
-  padding: 0.8rem 1.5rem;
-  position: relative;
+  padding: 0.8rem 1.6rem;
   text-decoration: none;
   transition: 0.2s all ease-in-out;
   will-change: transform;
   z-index: 0;
   text-align: center;
-  width: 10rem;
+  width: 11rem;
   border: 2px solid rgb(210, 210, 210);
   background-color: #002f8d;
   font-size: 1.1rem;
-  color: #FFF;
+  color: #fff;
   transition: background-color 0.2s ease;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 @media (max-width: 878px) {
   .sectionFourth .sectionFourthContent a {

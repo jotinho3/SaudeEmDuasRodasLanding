@@ -130,7 +130,7 @@ export const DropdownMenu = styled(motion.ul)<DropdownMenuProps>`
 
 `;
 
-export const NavButton = styled.button`
+export const NavButton = styled.a`
 
 cursor: pointer;
 
@@ -138,7 +138,7 @@ border: 2px solid currentColor;
 border-radius: 3rem;
 color: #002f8d;
 overflow: hidden;
-padding: 1rem 2rem;
+padding: 0.8rem 2.5rem;
 position: relative;
 text-decoration: none;
 transition: 0.2s transform ease-in-out;
