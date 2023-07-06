@@ -1,10 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .header {
@@ -33,7 +30,7 @@ html {
 .navLink a {
   text-decoration: none;
   font-style: none;
-  color: #fff;
+  color: #FFF;
   transition: transform 0.3s ease;
 }
 .navLink a:hover {
@@ -63,10 +60,10 @@ html {
   margin-right: 10rem;
   margin-bottom: 5rem;
   width: 43%;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 .sectionFirstText h1 {
-  color: #fff;
+  color: #FFF;
   font-weight: 500;
 }
 @media (max-width: 878px) {
@@ -93,7 +90,7 @@ html {
   background-color: transparent;
   border-radius: 100rem;
   font-size: 1.2rem;
-  color: #fff;
+  color: #FFF;
   transition: background-color 0.2s ease;
   margin-top: 3rem;
 }
@@ -143,7 +140,6 @@ html {
   font-weight: lighter;
 }
 .sectionSecond .sectionSecondFlex span {
-  font-size: 1.2rem;
   color: #002f8d;
 }
 @media (max-width: 868px) {
@@ -187,13 +183,17 @@ html {
 }
 
 .sectionThird {
-  height: 83.5vh;
   width: 100%;
   background-color: #000000;
 }
+@media (max-width: 1378px) {
+  .sectionThird {
+    margin-top: 25rem;
+  }
+}
 @media (max-width: 878px) {
   .sectionThird {
-    margin-top: 80rem;
+    margin-top: 70rem;
     height: 230vh;
   }
 }
@@ -217,12 +217,11 @@ html {
 .sectionThird .sectionThirdContent {
   width: 35%;
   display: flex;
-  gap: 1.6rem;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-left: 6rem;
-  color: #fff;
+  color: #FFF;
 }
 .sectionThird .sectionThirdContent h3 {
   font-weight: 500;
@@ -232,8 +231,8 @@ html {
   font-size: 2rem;
 }
 .sectionThird .sectionThirdContent p {
-  margin-top: 5rem;
-  font-size: 1.2rem;
+  margin-top: 3rem;
+  font-size: 1rem;
 }
 .sectionThird .sectionThirdContent a {
   cursor: pointer;
@@ -252,7 +251,7 @@ html {
   background-color: transparent;
   border-radius: 100rem;
   font-size: 1.1rem;
-  color: #fff;
+  color: #FFF;
   transition: background-color 0.2s ease;
   margin-top: 3rem;
 }
@@ -281,12 +280,18 @@ html {
   will-change: transform;
   background-color: #002f8d;
 }
+@media (max-width: 1380px) {
+  .sectionThird .sectionThirdContent a {
+    margin-bottom: 2rem;
+  }
+}
 
 .sectionFourth {
   height: 93.5vh;
   width: 100%;
   background-color: #ffffff;
   padding: 10vh 20vw;
+  margin-bottom: 40vh;
 }
 @media (max-width: 878px) {
   .sectionFourth {
@@ -306,7 +311,7 @@ html {
 .sectionFourth .sectionFourthFlex .sectionFourthInsideFlex {
   display: flex;
   align-items: center;
-  gap: -20;
+  gap: -10;
 }
 .sectionFourth .sectionFourthFlex .sectionFourthInsideFlex .sectionFourthSmartphone {
   height: 26vh;
@@ -317,7 +322,7 @@ html {
 }
 .sectionFourth .sectionFourthFlex .sectionFourthInsideFlex .sectionFourthKindle {
   height: 32vh;
-  margin-left: -45px;
+  margin-left: -35px;
   margin-bottom: -10px;
 }
 @media (max-width: 878px) {
@@ -332,7 +337,6 @@ html {
 .sectionFourth .sectionFourthContent {
   width: 35%;
   display: flex;
-  gap: 0.8rem;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -340,6 +344,7 @@ html {
 }
 @media (max-width: 878px) {
   .sectionFourth .sectionFourthContent {
+    width: 100%;
     padding-top: 4rem;
     padding-left: 0.5rem;
     text-align: center;
@@ -347,20 +352,8 @@ html {
     margin-bottom: 20vh;
   }
 }
-.sectionFourth .sectionFourthContent h3 {
-  text-decoration: line-through;
-  font-weight: 500;
-  color: #7a7a7a;
-  font-size: 1.5rem;
-}
-.sectionFourth .sectionFourthContent img {
-  color: #fff;
-  width: 1.5rem;
-  margin-left: 10px;
-  margin-bottom: -5px;
-}
 .sectionFourth .sectionFourthContent h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 @media (max-width: 878px) {
   .sectionFourth .sectionFourthContent h2 {
@@ -368,8 +361,8 @@ html {
   }
 }
 .sectionFourth .sectionFourthContent p {
-  margin-top: 5rem;
-  font-size: 1.3rem;
+  margin-top: 2rem;
+  font-size: 1rem;
 }
 @media (max-width: 878px) {
   .sectionFourth .sectionFourthContent p {
@@ -381,23 +374,28 @@ html {
   border: 2px solid currentColor;
   color: #002f8d;
   overflow: hidden;
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 1rem;
+  position: relative;
   text-decoration: none;
   transition: 0.2s all ease-in-out;
   will-change: transform;
   z-index: 0;
   text-align: center;
-  width: 11rem;
+  width: 10rem;
   border: 2px solid rgb(210, 210, 210);
   background-color: #002f8d;
   font-size: 1.1rem;
-  color: #fff;
+  color: #FFF;
   transition: background-color 0.2s ease;
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+.sectionFourth .sectionFourthContent a img {
+  margin-left: 8px;
+  width: 20px;
 }
 @media (max-width: 878px) {
   .sectionFourth .sectionFourthContent a {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 }
 .sectionFourth .sectionFourthContent a::after {
