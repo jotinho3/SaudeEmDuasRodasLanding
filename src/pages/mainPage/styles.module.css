@@ -188,7 +188,7 @@ body {
 }
 @media (max-width: 1378px) {
   .sectionThird {
-    margin-top: 25rem;
+    margin-top: 35rem;
   }
 }
 @media (max-width: 878px) {
@@ -295,7 +295,7 @@ body {
 }
 @media (max-width: 878px) {
   .sectionFourth {
-    margin-top: 5rem;
+    margin-top: 30rem;
     height: 80vh;
   }
 }
