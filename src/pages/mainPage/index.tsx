@@ -251,7 +251,7 @@ const MainPage: React.FC = () => {
               </p>
               <h3>R$139,99</h3>
               <h2>R$77,00</h2>
-              <a href="https://www.tandfonline.com/doi/abs/10.1080/02640410410001730205">
+              <a href="https://pay.kiwify.com.br/iDvlB5E">
                 Comprar
                 <img src={ShoppingCart} alt=""/>
               </a>
