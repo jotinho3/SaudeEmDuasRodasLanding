@@ -120,13 +120,16 @@ const Header = () => {
               exit="closed"
             >
               <DropdownLink>
-                <DropdownLinkText href="#">Home</DropdownLinkText>
+                <DropdownLinkText href="#inicio">Inicio</DropdownLinkText>
               </DropdownLink>
               <DropdownLink>
-                <DropdownLinkText href="#">Produtos</DropdownLinkText>
+                <DropdownLinkText href="#beneficios">Benefícios</DropdownLinkText>
               </DropdownLink>
               <DropdownLink>
-                <DropdownLinkText href="#">Contato</DropdownLinkText>
+                <DropdownLinkText href="#objetivo">Objetivo</DropdownLinkText>
+              </DropdownLink>
+              <DropdownLink>
+                <DropdownLinkText href="#comprar">Adquirir</DropdownLinkText>
               </DropdownLink>
             </DropdownMenu>
           )}

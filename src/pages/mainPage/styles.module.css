@@ -1,3 +1,9 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
@@ -43,9 +49,7 @@ body {
 }
 
 .sectionFirst {
-  background-image: url("../../assets/pexels-rfstudio-3820359.jpg");
-  background-position: center;
-  background-size: cover;
+  background-color: #161616;
   width: 100%;
   height: 900px;
   position: relative;
@@ -53,13 +57,43 @@ body {
   justify-content: center;
   align-items: center;
 }
+.sectionFirst .LottieWrapper {
+  position: relative;
+}
+@media (max-width: 878px) {
+  .sectionFirst .LottieWrapper {
+    margin-top: 5rem;
+  }
+}
+.sectionFirst .LottieWrapper .Lottie {
+  width: 40rem;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 878px) {
+  .sectionFirst .LottieWrapper .Lottie {
+    width: 30rem;
+  }
+}
+.sectionFirst .LottieWrapper .LottieBlob {
+  position: absolute;
+  top: 0;
+  opacity: 60%;
+  z-index: 0;
+}
+@media (max-width: 878px) {
+  .sectionFirst {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 
 .sectionFirstText {
   z-index: 1;
   margin-top: 6rem;
   margin-right: 10rem;
   margin-bottom: 5rem;
-  width: 43%;
+  width: 30%;
   font-size: 1.8rem;
 }
 .sectionFirstText h1 {
@@ -70,6 +104,13 @@ body {
   .sectionFirstText h1 {
     font-size: 2rem;
     font-weight: 500;
+  }
+}
+@media (max-width: 878px) {
+  .sectionFirstText {
+    order: 3;
+    text-align: center;
+    margin-left: 8rem;
   }
 }
 
@@ -142,6 +183,56 @@ body {
 .sectionSecond .sectionSecondFlex span {
   color: #002f8d;
 }
+.sectionSecond .sectionSecondFlex a {
+  cursor: pointer;
+  border: 2px solid currentColor;
+  color: #002f8d;
+  overflow: hidden;
+  padding: 0.8rem 1rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s all ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  text-align: center;
+  width: 10rem;
+  border: 2px solid rgb(210, 210, 210);
+  background-color: #002f8d;
+  font-size: 1.1rem;
+  color: #FFF;
+  transition: background-color 0.2s ease;
+  margin-top: 3rem;
+}
+.sectionSecond .sectionSecondFlex a img {
+  margin-left: 8px;
+  width: 20px;
+}
+.sectionSecond .sectionSecondFlex a::after {
+  background-color: #002f8d;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.sectionSecond .sectionSecondFlex a:hover::after {
+  transform: translate(0, 0);
+}
+.sectionSecond .sectionSecondFlex a:hover {
+  border: 2px solid transparent;
+  transform: scale(1.01);
+  will-change: transform;
+  background-color: #002f8d;
+  transition: all 0.2s ease;
+}
 @media (max-width: 868px) {
   .sectionSecond .sectionSecondFlex h3 {
     font-size: 1.5rem;
@@ -162,7 +253,8 @@ body {
 .sectionSecond .sectionSecondCardFlex .sectionSecondCard {
   padding: 1.525rem 1rem;
   width: 350px;
-  height: 313px;
+  height: -moz-fit-content;
+  height: fit-content;
   border: 2px solid #d6d6d6;
   border-radius: 5px;
   display: flex;
@@ -291,7 +383,7 @@ body {
   width: 100%;
   background-color: #ffffff;
   padding: 10vh 20vw;
-  margin-bottom: 40vh;
+  margin-top: 10rem;
 }
 @media (max-width: 878px) {
   .sectionFourth {
@@ -340,6 +432,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 1rem;
   color: #000000;
 }
 @media (max-width: 878px) {
@@ -348,7 +441,8 @@ body {
     padding-top: 4rem;
     padding-left: 0.5rem;
     text-align: center;
-    gap: 0;
+    align-items: center;
+    gap: 2rem;
     margin-bottom: 20vh;
   }
 }
@@ -359,6 +453,11 @@ body {
   .sectionFourth .sectionFourthContent h2 {
     font-size: 3rem;
   }
+}
+.sectionFourth .sectionFourthContent h3 {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: #8F8F8F;
 }
 .sectionFourth .sectionFourthContent p {
   margin-top: 2rem;
@@ -392,11 +491,6 @@ body {
 .sectionFourth .sectionFourthContent a img {
   margin-left: 8px;
   width: 20px;
-}
-@media (max-width: 878px) {
-  .sectionFourth .sectionFourthContent a {
-    margin-left: 2rem;
-  }
 }
 .sectionFourth .sectionFourthContent a::after {
   background-color: #002f8d;
@@ -479,4 +573,46 @@ body {
   .bgVideoStyle {
     margin-top: 7rem;
   }
+}
+.Footer {
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 5rem 30px 5rem;
+  background-color: #000000;
+  overflow: visible;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 60;
+  border-radius: 0px 0px 0px 0px;
+  border-color: #8F8F8F;
+  border-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  color: #fff;
+}
+@media (max-width: 878px) {
+  .Footer {
+    margin-top: 80rem;
+  }
+}
+.Footer .FooterContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.Footer .FooterContent p {
+  color: #999999;
+}
+.Footer .FooterSocials {
+  display: flex;
+  gap: 2rem;
+}
+.Footer .FooterSocials img {
+  height: 32px;
+  filter: invert(1) saturate(0.81);
 }/*# sourceMappingURL=styles.module.css.map */

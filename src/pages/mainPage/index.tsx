@@ -11,6 +11,9 @@ import sectionFourthSmartphone from "../../assets/CelularSaudeEmDuasRodas.png";
 import sectionFourthTablet from "../../assets/TabletSaudeEmDuasRodas.png";
 import sectionFourthKindle from "../../assets/KindleSaudeEmDuasRodas.png";
 import ShoppingCart from '../../assets/shopping-cart.svg'
+import Lottie from 'lottie-react'
+import LottieDataStretch from '../../assets/06.json'
+import LottieDataBlob from '../../assets/IMG_BLOB_YELLOW_RED.json'
 
 
 const ParallaxSection: React.FC = () => {
@@ -68,7 +71,7 @@ const ParallaxSection: React.FC = () => {
             revista Journal of Sports Sciences, o alongamento regular melhora a
             eficiência muscular e reduz o risco de lesões musculoesqueléticas.
           </p>
-          <a href="https://www.tandfonline.com/doi/abs/10.1080/02640410410001730205">
+          <a href="#comprar">
             Saber mais
           </a>
         </div>
@@ -110,9 +113,20 @@ const MainPage: React.FC = () => {
               saúde flexível e plena!
             </h1>
             <div>
-              <button className={styles.sectionFirstButton}>Saber Mais</button>
+              <a href="#comprar"><button className={styles.sectionFirstButton}>Saber Mais</button></a>
             </div>
           </motion.div>
+
+            <motion.div  
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0,  opacity: 100 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: false, amount: 0.2 }} 
+            className={styles.LottieWrapper}>
+              <Lottie className={styles.Lottie} animationData={LottieDataStretch}/>
+              <Lottie className={styles.LottieBlob} animationData={LottieDataBlob}/>
+            </motion.div>
+          
         </section>
 
         <section className={styles.sectionSecond} aria-label="Benefícios" id="beneficios">
@@ -143,6 +157,9 @@ const MainPage: React.FC = () => {
                   Obtenha liberdade de movimento e desfrute de uma vida sem
                   limitações.
                 </p>
+                <a href="#comprar">
+            Saber mais
+          </a>
               </motion.div>
 
               <motion.div
@@ -158,6 +175,9 @@ const MainPage: React.FC = () => {
                   Promova harmonia física e mental, encontrando o equilíbrio e
                   serenidade.
                 </p>
+                <a href="#comprar">
+            Saber mais
+          </a>
               </motion.div>
 
               <motion.div
@@ -173,6 +193,9 @@ const MainPage: React.FC = () => {
                   Proteja-se de lesões, fortalecendo seu corpo e evitando
                   problemas futuros.
                 </p>
+                <a href="#comprar">
+            Saber mais
+          </a>
               </motion.div>
             </div>
           </motion.div>
@@ -226,7 +249,7 @@ const MainPage: React.FC = () => {
                 postura correta. Invista em seu conforto e segurança. Adquira
                 agora e transforme sua experiência ao pilotar!
               </p>
-              <h3>R$109,99</h3>
+              <h3>R$139,99</h3>
               <h2>R$77,00</h2>
               <a href="https://www.tandfonline.com/doi/abs/10.1080/02640410410001730205">
                 Comprar
@@ -236,6 +259,25 @@ const MainPage: React.FC = () => {
           </motion.div>
         </section>
       </main>
+
+      <footer className={styles.Footer}>
+        <div className={styles.FooterContent}>
+          <h3>Contato:</h3>
+
+          <div>
+            <p>Contato: vizinhoslacqua@gmail.com</p>
+            <p>(11) 9 7768-3766 </p>
+          </div>
+          
+        </div>
+
+        <div className={styles.FooterSocials}>
+          
+
+        </div>
+
+      </footer>
+
     </>
   );
 };
