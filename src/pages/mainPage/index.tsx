@@ -79,7 +79,7 @@ const ParallaxSection: React.FC = () => {
 };
 
 const MainPage: React.FC = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+
 
   return (
     <>
