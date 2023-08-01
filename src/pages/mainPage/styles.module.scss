@@ -106,7 +106,8 @@ align-items: center;
         height: 400px;
 
         @media (max-width: 878px) {
-            width: 400px;
+            width: 300px;
+            height: 300px;
         
             
         }
@@ -479,7 +480,7 @@ border: none;
     
 
     @media (max-width: 1378px) {
-        margin-top: 35rem
+        margin-top: 45rem
         
         
     } 
@@ -901,7 +902,7 @@ margin-top: 3rem;
 
 
 .Footer {
-    margin-top: 10%;
+    margin-top: 40%;
     width: 100%;
     display: flex;
     justify-content: space-around;
