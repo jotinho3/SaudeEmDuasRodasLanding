@@ -88,6 +88,12 @@ align-items: center;
    display: flex;
    gap: 20px;
 
+   @media (max-width: 878px) {
+    flex-direction: column;
+    gap: 0;
+    
+   }
+
    a button img {
     filter: invert(80%);
     width: 1.3rem;
