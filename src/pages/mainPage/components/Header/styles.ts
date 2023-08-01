@@ -12,8 +12,12 @@ export const HeaderContainer = styled.header`
   background-color: #000;
   color: #fff;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 999;
   width: 100%;
+  border-bottom: 1px solid;
+  border-bottom-color: #1a1a1a;
   
 `;
 

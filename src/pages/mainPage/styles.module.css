@@ -8,6 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   width: 100%;
   overflow-x: hidden;
+  overscroll-behavior-y: none !important;
 }
 
 .header {
@@ -49,7 +50,7 @@ body {
 }
 
 .sectionFirst {
-  background-color: #161616;
+  background-color: #000000;
   width: 100%;
   height: 900px;
   position: relative;
@@ -57,8 +58,26 @@ body {
   justify-content: center;
   align-items: center;
 }
+.sectionFirst .buttonFirstDiv {
+  display: flex;
+  gap: 20px;
+}
+.sectionFirst .buttonFirstDiv a button img {
+  filter: invert(80%);
+  width: 1.3rem;
+}
 .sectionFirst .LottieWrapper {
   position: relative;
+}
+.sectionFirst .LottieWrapper iframe {
+  border: none;
+  width: 30vw;
+  height: 400px;
+}
+@media (max-width: 878px) {
+  .sectionFirst .LottieWrapper iframe {
+    width: 400px;
+  }
 }
 @media (max-width: 878px) {
   .sectionFirst .LottieWrapper {
@@ -72,7 +91,7 @@ body {
 }
 @media (max-width: 878px) {
   .sectionFirst .LottieWrapper .Lottie {
-    width: 30rem;
+    width: 100%;
   }
 }
 .sectionFirst .LottieWrapper .LottieBlob {
@@ -82,9 +101,17 @@ body {
   z-index: 0;
 }
 @media (max-width: 878px) {
+  .sectionFirst .LottieWrapper .LottieBlob {
+    width: 100%;
+  }
+}
+@media (max-width: 878px) {
   .sectionFirst {
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 700px;
+  }
+  .sectionFirst iframe {
+    width: 21.875rem;
+    height: 15rem;
   }
 }
 
@@ -102,7 +129,7 @@ body {
 }
 @media (max-width: 878px) {
   .sectionFirstText h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
 }
@@ -110,7 +137,8 @@ body {
   .sectionFirstText {
     order: 3;
     text-align: center;
-    margin-left: 8rem;
+    margin: 0;
+    margin-bottom: 2rem;
   }
 }
 
@@ -126,7 +154,8 @@ body {
   transition: 0.2s transform ease-in-out;
   will-change: transform;
   z-index: 0;
-  width: 10rem;
+  width: -moz-fit-content;
+  width: fit-content;
   border: 2px solid rgb(210, 210, 210);
   background-color: transparent;
   border-radius: 100rem;
@@ -156,6 +185,51 @@ body {
 }
 .sectionFirstButton:hover {
   border: 2px solid transparent;
+  transform: scale(1.05);
+  will-change: transform;
+  background-color: #002f8d;
+}
+
+.sectionFirstButtonHighlight {
+  cursor: pointer;
+  color: #002f8d;
+  overflow: hidden;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s all ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #002f8d;
+  border-radius: 100rem;
+  font-size: 1.2rem;
+  color: #FFF;
+  transition: all 0.3s ease;
+  margin-top: 3rem;
+  border: none;
+}
+.sectionFirstButtonHighlight::after {
+  background-color: #002f8d;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s all ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.sectionFirstButtonHighlight:hover::after {
+  transform: translate(0, 0);
+}
+.sectionFirstButtonHighlight:hover {
   transform: scale(1.05);
   will-change: transform;
   background-color: #002f8d;
@@ -546,7 +620,7 @@ body {
   right: auto;
   top: 0;
   z-index: 0;
-  filter: brightness(15%);
+  filter: brightness(3%);
 }
 @media (max-width: 878px) {
   .bgVideoStyle {
@@ -566,7 +640,6 @@ body {
     flex-direction: row;
   }
   .sectionFirstText {
-    padding-left: 2rem;
     width: 100%;
     font-size: 1.2rem;
   }
@@ -615,4 +688,12 @@ body {
 .Footer .FooterSocials img {
   height: 32px;
   filter: invert(1) saturate(0.81);
+}
+
+.svgBgSeparator {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-top: -1px;
+  margin-bottom: -1px;
 }/*# sourceMappingURL=styles.module.css.map */

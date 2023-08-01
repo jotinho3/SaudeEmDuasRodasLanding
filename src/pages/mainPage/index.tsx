@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./styles.module.scss";
-import bgVideo from "../../assets/0526(1).mp4";
 import flexibilityIcon from "../../assets/icons8-flexibility-64.png";
 import preventionIcon from "../../assets/icons8-prevention-64.png";
 import healthIcon from "../../assets/icons8-health-64.png";
@@ -11,10 +10,9 @@ import sectionFourthSmartphone from "../../assets/CelularSaudeEmDuasRodas.png";
 import sectionFourthTablet from "../../assets/TabletSaudeEmDuasRodas.png";
 import sectionFourthKindle from "../../assets/KindleSaudeEmDuasRodas.png";
 import ShoppingCart from '../../assets/shopping-cart.svg'
-import Lottie from 'lottie-react'
-import LottieDataStretch from '../../assets/06.json'
-import LottieDataBlob from '../../assets/IMG_BLOB_YELLOW_RED.json'
-
+import svgBgSeparator from '../../assets/layered-waves-haikei (3).svg'
+import GiftIcon from '../../assets/gift.svg'
+import KiwifyLogo from '../../assets/kiwifyLogo.png'
 
 const ParallaxSection: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -93,14 +91,7 @@ const MainPage: React.FC = () => {
           aria-label="Introdução da página"
           id="inicio"
         >
-          <video
-            className={styles.bgVideoStyle}
-            autoPlay
-            muted
-            loop
-            ref={videoRef}
-            src={bgVideo}
-          />
+          
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 100 }}
@@ -112,8 +103,9 @@ const MainPage: React.FC = () => {
               Descubra o poder do alongamento e transforme sua vida com uma
               saúde flexível e plena!
             </h1>
-            <div>
-              <a href="#comprar"><button className={styles.sectionFirstButton}>Saber Mais</button></a>
+            <div className={styles.buttonFirstDiv}>
+              <a href="#comprar"><button className={styles.sectionFirstButtonHighlight}>Dar de presente <img src={GiftIcon} alt="giftIcon" /></button></a>
+              <a href="#comprar"><button className={styles.sectionFirstButton}>Saber Mais </button></a>
             </div>
           </motion.div>
 
@@ -123,11 +115,13 @@ const MainPage: React.FC = () => {
             transition={{ duration: 0.4 }}
             viewport={{ once: false, amount: 0.2 }} 
             className={styles.LottieWrapper}>
-              <Lottie className={styles.Lottie} animationData={LottieDataStretch}/>
-              <Lottie className={styles.LottieBlob} animationData={LottieDataBlob}/>
+              <iframe src="https://www.youtube.com/embed/QTO8NiJpHhw" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+       
             </motion.div>
           
         </section>
+
+        <img width="100%" className={styles.svgBgSeparator} src={svgBgSeparator} alt="" />
 
         <section className={styles.sectionSecond} aria-label="Benefícios" id="beneficios">
           <motion.div
@@ -251,10 +245,14 @@ const MainPage: React.FC = () => {
               </p>
               <h3>R$139,99</h3>
               <h2>R$77,00</h2>
+              <div>
+                
+              </div>
               <a href="https://pay.kiwify.com.br/iDvlB5E" target="_blank">
                 Comprar
                 <img src={ShoppingCart} alt=""/>
               </a>
+              <p>Compra via <img width='120px' src={KiwifyLogo} alt="" /></p>
             </div>
           </motion.div>
         </section>
