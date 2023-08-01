@@ -931,7 +931,7 @@ margin-top: 3rem;
 
 
     @media (max-width: 878px) {
-        margin-top: 80rem;
+        margin-top: 100rem;
         
     }
 
@@ -969,4 +969,8 @@ margin-top: 3rem;
     margin-bottom: -1px;
     
     
+}
+
+html {
+    max-width: 100%;
 }
