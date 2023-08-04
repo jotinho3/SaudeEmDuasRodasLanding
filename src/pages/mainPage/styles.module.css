@@ -367,7 +367,7 @@ body {
 @media (max-width: 878px) {
   .sectionThird {
     margin-top: 70rem;
-    height: 230vh;
+    height: 150vh;
   }
 }
 .sectionThird .sectionThirdFlex {
@@ -468,7 +468,7 @@ body {
 }
 @media (max-width: 878px) {
   .sectionFourth {
-    margin-top: 30rem;
+    margin-top: 1rem;
     height: 80vh;
   }
 }
