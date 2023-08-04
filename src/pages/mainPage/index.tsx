@@ -6,9 +6,9 @@ import healthIcon from "../../assets/icons8-health-64.png";
 import Header from "./components/Header";
 import { motion } from "framer-motion";
 import sectionThirdImage from "../../assets/pexels-chermiti-mohamed-3049225.jpg";
-import sectionFourthSmartphone from "../../assets/CelularSaudeEmDuasRodas.png";
-import sectionFourthTablet from "../../assets/TabletSaudeEmDuasRodas.png";
-import sectionFourthKindle from "../../assets/KindleSaudeEmDuasRodas.png";
+import sectionFourthSmartphone from "../../assets/smartmockups_lku2smyd (1).png";
+import sectionFourthTablet from "../../assets/smartmockups_lku2q92j.png";
+import sectionFourthKindle from "../../assets/smartmockups_lkwycnw7.png";
 import ShoppingCart from '../../assets/shopping-cart.svg'
 import svgBgSeparator from '../../assets/layered-waves-haikei (3).svg'
 import GiftIcon from '../../assets/gift.svg'
@@ -22,7 +22,7 @@ const ParallaxSection: React.FC = () => {
     const handleScroll = () => {
       if (videoRef.current && sectionRef.current) {
         const scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
+          window.scrollY || document.documentElement.scrollTop;
         const videoHeight = videoRef.current.offsetHeight;
         const sectionTop = sectionRef.current.offsetTop;
         const sectionHeight = sectionRef.current.offsetHeight;
@@ -240,8 +240,7 @@ const MainPage: React.FC = () => {
                 Não deixe dores e lesões atrapalharem sua paixão por pilotar!
                 Com nosso e-book, você terá acesso a exercícios, alongamentos e
                 orientações de especialistas em fisioterapia para manter uma
-                postura correta. Invista em seu conforto e segurança. Adquira
-                agora e transforme sua experiência ao pilotar!
+                postura correta.
               </p>
               <h3>R$139,99</h3>
               <h2>R$77,00</h2>
