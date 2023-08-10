@@ -243,7 +243,7 @@ const MainPage: React.FC = () => {
                 postura correta.
               </p>
               <h3>R$139,99</h3>
-              <h2>R$77,00</h2>
+              <h2>R$37,00</h2>
               <div>
                 
               </div>
