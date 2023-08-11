@@ -14,6 +14,8 @@ import svgBgSeparator from '../../assets/layered-waves-haikei (3).svg'
 import GiftIcon from '../../assets/gift.svg'
 import KiwifyLogo from '../../assets/kiwifyLogo.png'
 
+
+
 const ParallaxSection: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -79,11 +81,17 @@ const ParallaxSection: React.FC = () => {
 };
 
 const MainPage: React.FC = () => {
+  const handleAddToCart = () => {
+    // Call the fbq function to track the event
+    fbq('track', 'Comprar', { currency: 'BRL', value: 37.00 });
+  };
 
 
   return (
     <>
       <Header />
+
+      
 
       <main>
         <section
@@ -247,10 +255,11 @@ const MainPage: React.FC = () => {
               <div>
                 
               </div>
-              <a href="https://pay.kiwify.com.br/iDvlB5E" target="_blank">
+              <a href="https://pay.kiwify.com.br/iDvlB5E" target="_blank" id="comprarButton" onClick={handleAddToCart}>
                 Comprar
                 <img src={ShoppingCart} alt=""/>
               </a>
+
               <p>Compra via <img width='120px' src={KiwifyLogo} alt="" /></p>
             </div>
           </motion.div>
