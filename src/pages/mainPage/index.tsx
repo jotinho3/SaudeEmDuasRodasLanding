@@ -13,6 +13,7 @@ import ShoppingCart from '../../assets/shopping-cart.svg'
 import svgBgSeparator from '../../assets/layered-waves-haikei (3).svg'
 import GiftIcon from '../../assets/gift.svg'
 import KiwifyLogo from '../../assets/kiwifyLogo.png'
+import SwipeDown from '../../assets/swipedown.png'
 
 
 
@@ -124,6 +125,21 @@ const MainPage: React.FC = () => {
               <iframe src="https://www.youtube.com/embed/QTO8NiJpHhw" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
        
             </motion.div>
+
+
+            <motion.div
+      initial={{ scale: 1 }}
+      animate={{ scale: [1, 1.1, 1] }}
+      transition={{
+        duration: 1,
+        repeat: Infinity,
+      }}
+      className={styles.swipeDowmImageDiv}
+    >
+<img src={SwipeDown} alt="" />
+      </motion.div>
+
+            
           
         </section>
 

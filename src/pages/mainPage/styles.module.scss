@@ -82,17 +82,19 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-padding-top: 15%;
+padding-top: 6%;
+
+
 
 
 
 .buttonFirstDiv {
    display: flex;
-   gap: 20px;
 
    @media (max-width: 878px) {
     flex-direction: column;
-    gap: 0;
+    height: 20rem;
+    
     
    }
 
@@ -899,6 +901,9 @@ margin-top: 3rem;
         display: flex;
         flex-wrap: wrap;    
         flex-direction: row;
+        height: 900px;
+        padding: 0;
+ 
     }
    
     .sectionFirstText {
@@ -910,6 +915,21 @@ margin-top: 3rem;
     .bgVideoStyle {
         margin-top: 7rem;
 
+    }
+
+
+    .swipeDowmImageDiv {
+        display: inline !important;
+        position: absolute;
+        bottom: -10px;
+        right: 160px;
+
+        
+
+        img {
+            width: 4rem;
+            filter: invert(100%);
+        }
     }
     
 }
@@ -983,4 +1003,14 @@ margin-top: 3rem;
 
 html {
     max-width: 100%;
+}
+
+
+
+@media (min-width: 1028px) {
+    .swipeDowmImageDiv {
+        display: none !important;
+    
+    }
+    
 }
