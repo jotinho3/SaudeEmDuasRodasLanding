@@ -65,9 +65,7 @@ const ParallaxSection: React.FC = () => {
           <h3>Objetivo</h3>
           <h2>Promovendo Saúde</h2>
           <p>
-            O alongamento diário é essencial para ciclistas, motociclistas,
-            cadeirantes e motoboys, pois melhora a flexibilidade, previne lesões
-            e aumenta o desempenho. De acordo com estudos científicos, como o da
+            De acordo com estudos científicos, como o da
             revista Journal of Sports Sciences, o alongamento regular melhora a
             eficiência muscular e reduz o risco de lesões musculoesqueléticas.
           </p>
