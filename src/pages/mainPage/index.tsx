@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import styles from "./styles.module.scss";
 import flexibilityIcon from "../../assets/icons8-flexibility-64.png";
 import preventionIcon from "../../assets/icons8-prevention-64.png";
 import healthIcon from "../../assets/icons8-health-64.png";
 import Header from "./components/Header";
 import { motion } from "framer-motion";
-import sectionThirdImage from "../../assets/pexels-chermiti-mohamed-3049225.jpg";
+
 import sectionFourthSmartphone from "../../assets/smartmockups_lku2smyd (1).png";
 import sectionFourthTablet from "../../assets/smartmockups_lku2q92j.png";
 import sectionFourthKindle from "../../assets/smartmockups_lkwycnw7.png";
@@ -16,67 +16,67 @@ import KiwifyLogo from '../../assets/kiwifyLogo.png'
 
 
 
-const ParallaxSection: React.FC = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const sectionRef = useRef<HTMLDivElement>(null);
+// const ParallaxSection: React.FC = () => {
+//   const videoRef = useRef<HTMLVideoElement>(null);
+//   const sectionRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (videoRef.current && sectionRef.current) {
-        const scrollTop =
-          window.scrollY || document.documentElement.scrollTop;
-        const videoHeight = videoRef.current.offsetHeight;
-        const sectionTop = sectionRef.current.offsetTop;
-        const sectionHeight = sectionRef.current.offsetHeight;
-        const offset =
-          (scrollTop - sectionTop) / (sectionHeight + window.innerHeight);
-        const translateY = Math.round(offset * videoHeight);
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (videoRef.current && sectionRef.current) {
+//         const scrollTop =
+//           window.scrollY || document.documentElement.scrollTop;
+//         const videoHeight = videoRef.current.offsetHeight;
+//         const sectionTop = sectionRef.current.offsetTop;
+//         const sectionHeight = sectionRef.current.offsetHeight;
+//         const offset =
+//           (scrollTop - sectionTop) / (sectionHeight + window.innerHeight);
+//         const translateY = Math.round(offset * videoHeight);
 
-        videoRef.current.style.transform = `translateY(-${translateY}px)`;
-      }
-    };
+//         videoRef.current.style.transform = `translateY(-${translateY}px)`;
+//       }
+//     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+//     window.addEventListener("scroll", handleScroll);
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
 
-  return (
-    <section
-      className={styles.sectionThird}
-      ref={sectionRef}
-      aria-label="Nosso objetivo"
-      id="objetivo"
-    >
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 100 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: false, amount: 0.3 }}
-        className={styles.sectionThirdFlex}
-      >
-        <img
-          className={styles.sectionThirdImage}
-          src={sectionThirdImage}
-          alt="Health and wellness"
-        />
-        <div className={styles.sectionThirdContent}>
-          <h3>Objetivo</h3>
-          <h2>Promovendo Saúde</h2>
-          <p>
-            De acordo com estudos científicos, como o da
-            revista Journal of Sports Sciences, o alongamento regular melhora a
-            eficiência muscular e reduz o risco de lesões musculoesqueléticas.
-          </p>
-          <a href="#comprar">
-            Saber mais
-          </a>
-        </div>
-      </motion.div>
-    </section>
-  );
-};
+//   return (
+//     <section
+//       className={styles.sectionThird}
+//       ref={sectionRef}
+//       aria-label="Nosso objetivo"
+//       id="objetivo"
+//     >
+//       <motion.div
+//         initial={{ opacity: 0 }}
+//         whileInView={{ opacity: 100 }}
+//         transition={{ duration: 1 }}
+//         viewport={{ once: false, amount: 0.3 }}
+//         className={styles.sectionThirdFlex}
+//       >
+//         <img
+//           className={styles.sectionThirdImage}
+//           src={sectionThirdImage}
+//           alt="Health and wellness"
+//         />
+//         <div className={styles.sectionThirdContent}>
+//           <h3>Objetivo</h3>
+//           <h2>Promovendo Saúde</h2>
+//           <p>
+//             De acordo com estudos científicos, como o da
+//             revista Journal of Sports Sciences, o alongamento regular melhora a
+//             eficiência muscular e reduz o risco de lesões musculoesqueléticas.
+//           </p>
+//           <a href="#comprar">
+//             Saber mais
+//           </a>
+//         </div>
+//       </motion.div>
+//     </section>
+//   );
+// };
 
 const MainPage: React.FC = () => {
   const handleAddToCart = () => {
