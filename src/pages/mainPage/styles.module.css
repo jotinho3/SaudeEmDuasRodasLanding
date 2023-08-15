@@ -57,6 +57,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 6%;
 }
 .sectionFirst .buttonFirstDiv {
   display: flex;
@@ -65,7 +66,7 @@ body {
 @media (max-width: 878px) {
   .sectionFirst .buttonFirstDiv {
     flex-direction: column;
-    gap: 0;
+    height: 20rem;
   }
 }
 .sectionFirst .buttonFirstDiv a button img {
@@ -138,6 +139,8 @@ body {
   .sectionFirstText h1 {
     font-size: 1.2rem;
     font-weight: 500;
+    width: 70%;
+    margin: 10px auto;
   }
 }
 @media (max-width: 878px) {
@@ -146,6 +149,9 @@ body {
     text-align: center;
     margin: 0;
     margin-bottom: 2rem;
+  }
+  .sectionFirstText a {
+    margin-bottom: -40px;
   }
 }
 
@@ -254,7 +260,7 @@ body {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  margin-top: 20.7rem;
+  margin-top: 8.7rem;
   gap: 40px;
 }
 .sectionSecond .sectionSecondFlex h3 {
@@ -366,8 +372,8 @@ body {
 }
 @media (max-width: 878px) {
   .sectionThird {
-    margin-top: 70rem;
-    height: 150vh;
+    margin-top: 100rem;
+    height: 115vh;
   }
 }
 .sectionThird .sectionThirdFlex {
@@ -468,7 +474,7 @@ body {
 }
 @media (max-width: 878px) {
   .sectionFourth {
-    margin-top: 1rem;
+    margin-top: 60rem;
     height: 80vh;
   }
 }
@@ -505,10 +511,17 @@ body {
     justify-content: center;
   }
   .sectionFourth .sectionFourthFlex .sectionFourthInsideFlex .sectionFourthTablet {
-    width: 90vw;
+    width: 70vw;
+    height: 40vh;
     margin-left: 20px;
   }
   .sectionFourth .sectionFourthFlex .sectionFourthInsideFlex .sectionFourthKindle {
+    width: 35vw;
+    margin-left: 10px;
+  }
+  .sectionFourth .sectionFourthFlex .sectionFourthInsideFlex .sectionFourthSmartphone {
+    width: 50vw;
+    height: 30vh;
     margin-left: 10px;
   }
 }
@@ -650,6 +663,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    height: 900px;
+    padding: 0;
   }
   .sectionFirstText {
     width: 100%;
@@ -657,6 +672,16 @@ body {
   }
   .bgVideoStyle {
     margin-top: 7rem;
+  }
+  .swipeDowmImageDiv {
+    display: inline !important;
+    position: absolute;
+    bottom: -10px;
+    right: 160px;
+  }
+  .swipeDowmImageDiv img {
+    width: 4rem;
+    filter: invert(100%);
   }
 }
 .Footer {
@@ -712,4 +737,10 @@ body {
 
 html {
   max-width: 100%;
+}
+
+@media (min-width: 1028px) {
+  .swipeDowmImageDiv {
+    display: none !important;
+  }
 }/*# sourceMappingURL=styles.module.css.map */

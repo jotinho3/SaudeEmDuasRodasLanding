@@ -90,6 +90,7 @@ padding-top: 6%;
 
 .buttonFirstDiv {
    display: flex;
+   gap: 20px;
 
    @media (max-width: 878px) {
     flex-direction: column;
@@ -196,6 +197,8 @@ padding-top: 6%;
         @media (max-width: 878px) {
             font-size: 1.2rem;
             font-weight: 500;
+            width: 70%;
+            margin: 10px auto;
             
         }
     
@@ -206,7 +209,10 @@ padding-top: 6%;
         text-align: center;
         margin: 0;
         margin-bottom: 2rem;
-  
+
+        a {
+            margin-bottom: -40px;
+        }
       
         
     }
@@ -342,7 +348,7 @@ border: none;
         width: 50%;
         margin: 0 auto;
         text-align: center;
-        margin-top: 20.7rem;
+        margin-top: 8.7rem;
 
         gap: 40px;
 
@@ -495,7 +501,7 @@ border: none;
         
     } 
 @media (max-width: 878px) {
-        margin-top: 70rem ;
+        margin-top: 100rem ;
 
         height: 115vh;
         
@@ -640,7 +646,7 @@ margin-top: 3rem;
   
 
     @media (max-width: 878px) {
-        margin-top: 1rem ;
+        margin-top: 60rem ;
         height: 80vh;
         
     
@@ -692,13 +698,22 @@ margin-top: 3rem;
             justify-content: center;
 
             .sectionFourthTablet {
-                width: 90vw;
+                width: 70vw;
+                height: 40vh;
                 margin-left: 20px;
             }
             
             .sectionFourthKindle {
+                width: 35vw;
                 margin-left: 10px;
             }
+
+            .sectionFourthSmartphone {
+                width: 50vw;
+                height: 30vh;
+                margin-left: 10px;
+            }
+            
             
         }
 

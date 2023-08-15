@@ -13,7 +13,6 @@ import ShoppingCart from '../../assets/shopping-cart.svg'
 import svgBgSeparator from '../../assets/layered-waves-haikei (3).svg'
 import GiftIcon from '../../assets/gift.svg'
 import KiwifyLogo from '../../assets/kiwifyLogo.png'
-import SwipeDown from '../../assets/swipedown.png'
 
 
 
@@ -111,8 +110,9 @@ const MainPage: React.FC = () => {
               saúde flexível e plena!
             </h1>
             <div className={styles.buttonFirstDiv}>
-              <a href="#comprar"><button className={styles.sectionFirstButtonHighlight}>Dar de presente <img src={GiftIcon} alt="giftIcon" /></button></a>
               <a href="#comprar"><button className={styles.sectionFirstButton}>Saber Mais </button></a>
+              <a href="#comprar"><button className={styles.sectionFirstButtonHighlight}>Dar de presente <img src={GiftIcon} alt="giftIcon" /></button></a>
+              
             </div>
           </motion.div>
 
@@ -126,18 +126,6 @@ const MainPage: React.FC = () => {
        
             </motion.div>
 
-
-            <motion.div
-      initial={{ scale: 1 }}
-      animate={{ scale: [1, 1.1, 1] }}
-      transition={{
-        duration: 1,
-        repeat: Infinity,
-      }}
-      className={styles.swipeDowmImageDiv}
-    >
-<img src={SwipeDown} alt="" />
-      </motion.div>
 
             
           
@@ -216,8 +204,8 @@ const MainPage: React.FC = () => {
             </div>
           </motion.div>
         </section>
-
-        <ParallaxSection />
+{/* 
+        <ParallaxSection /> */}
 
         <section className={styles.sectionFourth} aria-label="Comprar" id="comprar">
           <motion.div
