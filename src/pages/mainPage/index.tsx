@@ -13,6 +13,7 @@ import ShoppingCart from '../../assets/shopping-cart.svg'
 import svgBgSeparator from '../../assets/layered-waves-haikei (3).svg'
 import GiftIcon from '../../assets/gift.svg'
 import KiwifyLogo from '../../assets/kiwifyLogo.png'
+import scrollGif from '../../assets/animation_llfpyn6d_small (1).gif'
 
 
 
@@ -112,6 +113,7 @@ const MainPage: React.FC = () => {
             <div className={styles.buttonFirstDiv}>
               <a href="#comprar"><button className={styles.sectionFirstButton}>Saber Mais </button></a>
               <a href="#comprar"><button className={styles.sectionFirstButtonHighlight}>Dar de presente <img src={GiftIcon} alt="giftIcon" /></button></a>
+              <img src={scrollGif} alt="" />
               
             </div>
           </motion.div>
@@ -252,7 +254,7 @@ const MainPage: React.FC = () => {
                 orientações de especialistas em fisioterapia para manter uma
                 postura correta.
               </p>
-              <h3>R$139,99</h3>
+              <h3>R$79,99</h3>
               <h2>R$37,00</h2>
               <div>
                 
@@ -274,7 +276,7 @@ const MainPage: React.FC = () => {
 
           <div>
             <p>Contato: vizinhoslacqua@gmail.com</p>
-            <p>(11) 9 7768-3766 </p>
+
           </div>
           
         </div>
