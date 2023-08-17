@@ -254,8 +254,8 @@ const MainPage: React.FC = () => {
                 orientações de especialistas em fisioterapia para manter uma
                 postura correta.
               </p>
-              <h3>R$79,99</h3>
-              <h2>R$37,00</h2>
+              <h3>R$59,90</h3>
+              <h2>R$29,90</h2>
               <div>
                 
               </div>
