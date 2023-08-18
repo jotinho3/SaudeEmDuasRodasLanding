@@ -80,7 +80,7 @@ const Popup = () => {
             <h3>
                 R$29,00
             </h3>
-            <a href="https://pay.kiwify.com.br/cYQYhXL" className="popup-link">
+            <a href="https://pay.kiwify.com.br/cYQYhXL" className="popup-link" target="_blank" >
               Comprar com desconto
             </a>
           </div>

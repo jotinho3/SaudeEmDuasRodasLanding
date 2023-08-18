@@ -81,10 +81,7 @@ import Popup from "./components/Popup/Popup";
 // };
 
 const MainPage: React.FC = () => {
-  const handleAddToCart = () => {
-    // Call the fbq function to track the event
-    fbq('track', 'Comprar', { currency: 'BRL', value: 39.90 });
-  };
+ 
 
 
   return (
@@ -262,7 +259,7 @@ const MainPage: React.FC = () => {
               <div>
                 
               </div>
-              <a href="https://pay.kiwify.com.br/iDvlB5E" target="_blank" id="comprarButton" onClick={handleAddToCart}>
+              <a href="https://pay.kiwify.com.br/iDvlB5E" target="_blank" id="comprarButton">
                 Comprar
                 <img src={ShoppingCart} alt=""/>
               </a>
