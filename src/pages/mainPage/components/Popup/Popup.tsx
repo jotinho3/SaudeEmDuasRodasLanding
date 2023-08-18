@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Popup.css';
-import clockIcon from '../../../../assets/icons8-clock-100.png'
+
 
 const Popup = () => {
   const [showPopup, setShowPopup] = useState(false);
