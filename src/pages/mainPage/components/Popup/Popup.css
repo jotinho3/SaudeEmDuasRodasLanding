@@ -1,0 +1,121 @@
+.popup-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #eeeeee;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .popup-image {
+    width: 100%;
+    max-height: 150px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .popup-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .popup-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .popup-link {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .popup-link:hover {
+    color: #0056b3;
+  }
+  
+  /* ... other styles ... */
+  
+  .close-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 30px;
+    border-radius: 999px;
+    border: none;
+    padding: 0.2rem;
+    background-color: #af0000;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform ease 0.2s;
+
+
+  }
+
+  .close-button:hover {
+    transform: scale(110%);
+
+    
+  }
+
+
+  
+  
+  @keyframes timer-animation {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
+  .countdown-container {
+    display: flex;
+
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 30px;
+  }
+  
+  .countdown-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-bottom: 30px;
+    fill: #007bff; /* Change the color as needed */
+   
+  }
+  
+  .countdown-timer {
+    font-size: 26px;
+    font-weight: bold;
+    color: #007bff; /* Change the color as needed */
+  }
+
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .popup-content h3{
+    color: green;
+    font-size: 2rem;
+
+  }
+

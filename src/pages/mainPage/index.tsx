@@ -14,6 +14,7 @@ import svgBgSeparator from '../../assets/layered-waves-haikei (3).svg'
 import GiftIcon from '../../assets/gift.svg'
 import KiwifyLogo from '../../assets/kiwifyLogo.png'
 import scrollGif from '../../assets/animation_llfpyn6d_small (1).gif'
+import Popup from "./components/Popup/Popup";
 
 
 
@@ -82,7 +83,7 @@ import scrollGif from '../../assets/animation_llfpyn6d_small (1).gif'
 const MainPage: React.FC = () => {
   const handleAddToCart = () => {
     // Call the fbq function to track the event
-    fbq('track', 'Comprar', { currency: 'BRL', value: 37.00 });
+    fbq('track', 'Comprar', { currency: 'BRL', value: 39.90 });
   };
 
 
@@ -98,6 +99,8 @@ const MainPage: React.FC = () => {
           aria-label="Introdução da página"
           id="inicio"
         >
+
+          <Popup />
           
           <motion.div
             initial={{ opacity: 0 }}
@@ -252,10 +255,10 @@ const MainPage: React.FC = () => {
                 Não deixe dores e lesões atrapalharem sua paixão por pilotar!
                 Com nosso e-book, você terá acesso a exercícios, alongamentos e
                 orientações de especialistas em fisioterapia para manter uma
-                postura correta.
+                postura correta. <br /> <strong>7 Dias de garantia</strong>
               </p>
               <h3>R$59,90</h3>
-              <h2>R$29,90</h2>
+              <h2>R$49,90</h2>
               <div>
                 
               </div>
