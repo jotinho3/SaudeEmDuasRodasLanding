@@ -11,7 +11,7 @@ const Popup = () => {
     // Show the popup after 3 seconds
     const timerToShow = setTimeout(() => {
       setShowPopup(true);
-    }, 21000);
+    }, 9000);
 
     // Hide the popup after 15 minutes (900 seconds)
     const timerToHide = setTimeout(() => {

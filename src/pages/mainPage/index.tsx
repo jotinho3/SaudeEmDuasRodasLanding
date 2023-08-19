@@ -107,9 +107,9 @@ const MainPage: React.FC = () => {
             className={styles.sectionFirstText}
           >
             <h1>
-              Descubra o poder do alongamento e transforme sua vida com uma
-              saúde flexível e plena!
+              Acaberemos com suas dores por pilotar.
             </h1>
+            <p>Em nosso livro você terá o suficiente para deixar de ter dores de coluna e nas costas por pilotar com a postura errada sua moto, bicicleta e cadeira de rodas</p>
             <div className={styles.buttonFirstDiv}>
               <a href="#comprar"><button className={styles.sectionFirstButton}>Saber Mais </button></a>
               <a href="#comprar"><button className={styles.sectionFirstButtonHighlight}>Dar de presente <img src={GiftIcon} alt="giftIcon" /></button></a>
@@ -124,7 +124,7 @@ const MainPage: React.FC = () => {
             transition={{ duration: 0.4 }}
             viewport={{ once: false, amount: 0.2 }} 
             className={styles.LottieWrapper}>
-              <iframe src="https://www.youtube.com/embed/QTO8NiJpHhw" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/zxowkUbLDR0" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
        
             </motion.div>
 
