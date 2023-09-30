@@ -11,10 +11,19 @@ import sectionFourthTablet from "../../assets/smartmockups_lku2q92j.png";
 import sectionFourthKindle from "../../assets/smartmockups_lkwycnw7.png";
 import ShoppingCart from '../../assets/shopping-cart.svg'
 import svgBgSeparator from '../../assets/layered-waves-haikei (3).svg'
-import GiftIcon from '../../assets/gift.svg'
+import GiftIcon from '../../assets/icons8-information-50 (2).png'
 import KiwifyLogo from '../../assets/kiwifyLogo.png'
 import scrollGif from '../../assets/animation_llfpyn6d_small (1).gif'
 import Popup from "./components/Popup/Popup";
+import NumberAnimation from "./components/GrowNumber/NumberAnimation";
+import NumberReviewSection from "./components/NumberReviewSection/NRSection";
+
+import whatsappImg1 from '../../assets/depoimentowhats1.png'
+import whatsappImg2 from '../../assets/depoimentowhats2.png'
+import whatsappImg3 from '../../assets/depoimentowhats3.png'
+
+import mastercard from '../../assets/pixpng.png'
+import pix from '../../assets/mastercardpng.png'
 
 
 
@@ -107,12 +116,12 @@ const MainPage: React.FC = () => {
             className={styles.sectionFirstText}
           >
             <h1>
-              Acaberemos com suas dores por pilotar.
+              Acaberemos com suas dores ao pilotar.
             </h1>
-            <p>Em nosso livro você terá o suficiente para deixar de ter dores de coluna e nas costas por pilotar com a postura errada sua moto, bicicleta e cadeira de rodas</p>
+            <p>Em nosso e-book você terá o suficiente para deixar de ter dores de coluna e nas costas por pilotar com a postura errada sua moto, bicicleta e cadeira de rodas</p>
             <div className={styles.buttonFirstDiv}>
-              <a href="#comprar"><button className={styles.sectionFirstButton}>Saber Mais </button></a>
-              <a href="#comprar"><button className={styles.sectionFirstButtonHighlight}>Dar de presente <img src={GiftIcon} alt="giftIcon" /></button></a>
+             
+              <a href="#comprar"><button className={styles.sectionFirstButtonHighlight}>Saber Mais <img src={GiftIcon} alt="giftIcon" /></button></a>
               <img src={scrollGif} alt="" />
               
             </div>
@@ -132,10 +141,15 @@ const MainPage: React.FC = () => {
             
           
         </section>
+        
+        <NumberReviewSection />
+
+       
+       
 
         <img width="100%" className={styles.svgBgSeparator} src={svgBgSeparator} alt="" />
 
-        <section className={styles.sectionSecond} aria-label="Benefícios" id="beneficios">
+        <section className={`${styles.sectionSecond}`} aria-label="Benefícios" id="beneficios">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 100 }}
@@ -206,6 +220,62 @@ const MainPage: React.FC = () => {
             </div>
           </motion.div>
         </section>
+
+        <section className={`${styles.sectionSecond} ${styles.marginTop} `} aria-label="Depoimentos" id="depoimentos">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 100 }}
+            transition={{ duration: 1}}
+            viewport={{ once: false }}
+            className={styles.sectionSecondFlex}
+          >
+            <span>Depoimentos</span>
+            <h3>
+              Alguns depoimentos e avaliações recebidas em mensagens no WhatsApp dos leitores:
+            </h3>
+
+            <div className={styles.sectionSecondCardFlex}>
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 100 }}
+                transition={{ duration: 0.3, delay: 0.2 }}
+                viewport={{ once: false }}
+                className={styles.sectionSecondCard}
+              >
+                <motion.img src={whatsappImg1} className={styles.depoimentImage} alt="imagem depoimento 1" />
+
+              
+               
+              </motion.div>
+
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 100 }}
+                transition={{ duration: 0.3, delay: 0.6 }}
+                viewport={{ once: false }}
+                className={styles.sectionSecondCard}
+              >
+                <motion.img src={whatsappImg2} className={styles.depoimentImage} alt="imagem depoimento 2" />
+
+             
+               
+              </motion.div>
+
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 100 }}
+                transition={{ duration: 0.3, delay: 0.8 }}
+                viewport={{ once: false }}
+                className={styles.sectionSecondCard}
+              >
+                <motion.img src={whatsappImg3} className={styles.depoimentImage} alt="imagem depoimento 3" />
+
+                
+               
+              </motion.div>
+            </div>
+          </motion.div>
+        </section>
 {/* 
         <ParallaxSection /> */}
 
@@ -259,12 +329,15 @@ const MainPage: React.FC = () => {
               <div>
                 
               </div>
+              
               <a href="https://pay.kiwify.com.br/iDvlB5E" target="_blank" id="comprarButton">
                 Comprar
                 <img src={ShoppingCart} alt=""/>
               </a>
 
-              <p>Compra via <img width='120px' src={KiwifyLogo} alt="" /></p>
+              <p className={styles.paymentFlex}><img width='120px' src={mastercard} alt="" /><img width='60px' src={pix} alt="" /></p>
+
+              
             </div>
           </motion.div>
         </section>

@@ -1,0 +1,41 @@
+.NumberReviewSection {
+
+    background-color: black;
+    color: white;
+    
+    padding: 0.6rem;
+    border-bottom: 2px solid #353535;
+    border-top: 1px solid #353535;
+
+    h2 {
+        @media (max-width: 878px) {
+            font-size: 1.2rem;
+            
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    @media (max-width: 878px) {
+        flex-direction: column;
+        gap: 1.2rem;
+        
+    }
+
+
+    img {
+        width: 15rem;
+
+        @media (max-width: 878px) {
+            width: 8rem;
+            
+        }
+
+       
+    }
+}

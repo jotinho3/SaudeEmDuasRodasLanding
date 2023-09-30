@@ -65,7 +65,7 @@ body {
 
 
 .sectionFirst {
-   background-color: #000000;
+   background-color: #010101;
 
   
    
@@ -343,6 +343,10 @@ transition: all 0.3s ease;
 margin-top: 3rem;
 border: none;
 
+img {
+    filter: invert(100%);
+}
+
 }
 
 
@@ -350,6 +354,7 @@ border: none;
     height: 96vh;
     width: 100%;
     background-color: #ffffff;
+
 
     .sectionSecondFlex {
         display: flex;
@@ -461,6 +466,10 @@ border: none;
             
         }
 
+        .depoimentImage {
+            width: 15rem  !important;
+        }
+
 
         .sectionSecondCard {
             padding: 1.525rem 1rem ;
@@ -493,6 +502,8 @@ border: none;
             }
         }
     }
+
+    
    
 }
 
@@ -502,11 +513,12 @@ border: none;
 
     width: 100%;
     background-color: #000000;
+  
 
     
 
     @media (max-width: 1378px) {
-        margin-top: 45rem
+        margin-top: 48rem
         
         
     } 
@@ -649,14 +661,14 @@ margin-top: 3rem;
     width: 100%;
     background-color: #ffffff;
     padding: 10vh 10vw;
-    margin-top: 1rem;
+    margin-top: 6rem;
   
 
    
   
 
     @media (max-width: 878px) {
-        margin-top: 60rem ;
+        margin-top: 80rem ;
         height: 80vh;
         
     
@@ -1036,6 +1048,20 @@ html {
     .swipeDowmImageDiv {
         display: none !important;
     
+    }
+    
+}
+
+.paymentFlex {
+    display: flex;
+    gap: 1.2rem;
+
+}
+
+.marginTop {
+
+    @media (max-width: 878px) {
+        margin-top: 70rem;
     }
     
 }

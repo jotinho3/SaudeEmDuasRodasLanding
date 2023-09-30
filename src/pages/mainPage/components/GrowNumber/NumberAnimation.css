@@ -1,0 +1,9 @@
+
+   .number {
+    display: inline;
+    font-size: 2em;
+    font-weight: bold;
+    color: #2172d0;
+    transition: font-size 0.5s;
+  }
+  
