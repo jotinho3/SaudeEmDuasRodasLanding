@@ -12,10 +12,8 @@ import sectionFourthKindle from "../../assets/smartmockups_lkwycnw7.png";
 import ShoppingCart from '../../assets/shopping-cart.svg'
 import svgBgSeparator from '../../assets/layered-waves-haikei (3).svg'
 import GiftIcon from '../../assets/icons8-information-50 (2).png'
-import KiwifyLogo from '../../assets/kiwifyLogo.png'
 import scrollGif from '../../assets/animation_llfpyn6d_small (1).gif'
 import Popup from "./components/Popup/Popup";
-import NumberAnimation from "./components/GrowNumber/NumberAnimation";
 import NumberReviewSection from "./components/NumberReviewSection/NRSection";
 
 import whatsappImg1 from '../../assets/depoimentowhats1.png'
